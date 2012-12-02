@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pick your color</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.Jcrop.min.css" type="text/css" />
+   
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body  data-spy="scroll" data-target="#navbarExample" data-offset="0" class="row scrollspy-example">
+
+    <div class="navbar navbar-fixed-top">
+        
+          <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="index.html">Pick your color</a>
+                <ul class="nav">
+                    <li class="active"><a href="#">Подбор цвета</a></li>
+                    <!-- <li><a href="#">Как это работает?</a></li> --> 
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Избранное <b class="caret"></b></a>
+                      <ul class="dropdown-menu" id="izbr">                        
+                        <li><a>Выберите свой цвет и нажмите &#9733;</a></li>
+                      </ul>
+                    </li>  
+                    
+                       
+                </ul>
+                <ul class="nav pull-right">
+                     <li><a href="about.html">О сайте</a></li>
+                     <li>&nbsp;</li>
+                      <!-- <li class="divider-vertical"></li>
+                      <li >
+                        <div class="btn-group" data-toggle="buttons-radio">
+                          <button type="button active" class="btn active">Ру</button>                          
+                          <button type="button" class="btn">En</button>
+                        </div>
+                      </li>
+                      <li class="divider-vertical"></li> -->
+                    </ul>
+            </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+    <div class="row">
+        <div class="span12">
+            <div class="row">
+                <span class="span6"></span>
+                <span class="span6 pick">
+                        <br />
+                        <h1>Pick your color</h1>
+                        <h3>Выбери цвет, который тебе идёт</h3>
+                        <br /><br />
+                </span>
+
+            </div>
+        </div>
+        <div id="content"></div>
+        
+        <div class="ramka" >
+            <div class="fon">
+              <a href="#" id="per" class="btn btn-mini" type="button">Выбрать файл</a>
+                
+                <div id="img-container" class="">     
+                                          
+                        
+
+                <div id="tn" >
+                  <img src="img/tt.jpg" id="preview" class="jcrop-preview" />
+                </div>
+                <span class="tt">Нажмите на изображение для выделения области</span>
+                <div class="target_w"  id="img-list">
+
+                  <img src="img/tt.jpg" class="target" id="ferret"/>
+                </div>
+
+
+                <div id="select_file">
+                    <input type="file" name="file" id="file-field" />
+                </div>        
+                
+                        
+                    <div id="marker1"></div>
+                    <div id="marker2"></div>
+                    <div id="marker3"></div>                  
+
+                </div>
+                <!--
+                <div class="tabbable  tabs-below downc">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="lA">
+                      <p>A</p>
+                    </div>
+                    <div class="tab-pane" id="lB">
+                      <p>B</p>
+                    </div>
+                    <div class="tab-pane" id="lC">
+                      <p>C.</p>
+                    </div>
+                    <div class="tab-pane" id="lD">
+                      <p>D</p>
+                    </div>
+                    
+                  </div>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#lA" data-toggle="tab">K</a></li>
+                    <li class=""><a href="#lB" data-toggle="tab">Т</a></li>
+                    <li class=""><a href="#lC" data-toggle="tab">Т</a></li>
+                    <li class=""><a href="#lD" data-toggle="tab">А</a></li>
+                  </ul>
+                  
+                </div> -->
+                <span id="selname"></span>
+            </div></div></div>
+
+
+      <footer>
+        <p id="all" class="af4035 92000a">&copy; gurov 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script>
+    <script type="text/javascript" src="js/drag.js"></script>
+    <script type="text/javascript" src="js/jquery.Jcrop.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+
+
+
+  </body>
+</html>

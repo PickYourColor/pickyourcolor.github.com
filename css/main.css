@@ -1,0 +1,212 @@
+body {
+    padding-top: 65px;
+    padding-bottom: 10px;
+    background: #112122 url(../img/woven.png);
+}
+.b100{        
+    background-color: #cccccc;
+    
+    font-size:14px;
+    text-align: right;
+    color: white;   
+    
+    position: relative;     
+    margin-bottom:1px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    height: 80px;
+                cursor: pointer;
+}
+
+.b100 > span{
+    padding: 4px 10px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -14px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 2px;     
+    color: white;
+}
+#selname{
+    padding: 4px 10px;
+    position: absolute;
+    left: 45px;
+    bottom: 16px;
+    
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 2px;     
+    color: white;
+}
+
+
+
+.b100>a{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+
+}
+a.iz{
+    background: url(../img/star_off.png);
+}
+a.iz.on{
+    background: url(../img/bookmark-new.png);
+}
+a.iz:focus{
+    outline: none;
+}
+.ramka{
+    
+    height: 510px;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 50px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    left:50%;
+    margin-left: -450px;
+    width: 347px;
+}
+
+.fon{
+    position: relative;
+    margin: 5px;
+    padding-left: 5px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    
+}
+.w{
+    width: 800px;
+}
+
+.container{
+    position: relative;
+}
+.downc{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -74px;
+}
+
+.nav-tabs > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.ferret{
+    height: 400px;
+    display: block;
+}
+
+#marker1{
+    width:100px;
+    height:100px;
+    top: 245px;
+    left:55px;
+    position:absolute;
+    background-color: black;
+    border-radius: 50px;
+    opacity: 0.3;
+    cursor: move;
+}
+#marker2{
+    cursor: move;
+    width:100px;
+    height:100px;
+    top: 295px;
+    left:55px;
+    position:absolute;
+    background-color: black;
+    border-radius: 50px;
+    opacity: 0.6;
+}
+#marker3{
+    cursor: move;
+    width:100px;
+    height:100px;
+    top: 345px;
+    left:55px;
+    position:absolute;
+    background-color: black;
+    border-radius: 50px;
+    opacity: 1;
+}
+#img-list {
+    list-style-type: none;
+    
+}
+
+#select_file {
+    position: absolute;
+    top: 440px;
+    left: 340px;    
+    color:white;
+}
+
+.pick h1, .pick h3{
+    color: white;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+.b100 .met{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    top: 50%;
+    margin-left: -5px;
+    margin-top: -5px;            
+    padding: 0;
+    border-radius: 5px;
+    background-color: inherit;
+}
+.b100.active .met{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+#tn{
+    width:247px;
+    height:400px;
+    overflow:hidden;
+    left: 40px;
+    top: 40px;
+    position: absolute;
+}
+.target{
+    max-width: 400px;
+    max-height: 400px;    
+    
+}
+#img-container{
+    position: relative;
+}
+.target_w{
+    left: 340px;
+    top: 40px;
+    position: absolute;
+}
+.target_w > img{
+    max-width: 400px;
+    max-height: 400px;    
+}
+#per{
+    position: absolute;
+    top: 8px;
+    right: 45px;
+}
+.tt{
+    position: absolute;
+    left: 340px;
+    top: 16px;
+    font-size: 10px;
+    color: white;
+    padding: 2px 4px;
+    background-color: rgba(0,0,0,0.3);
+}
