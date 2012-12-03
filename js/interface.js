@@ -183,6 +183,7 @@ window.addEventListener('load', function () {
     function updateInfo() {
         countInfo.text( (imgCount == 0) ? 'Изображений не выбрано' : ('Изображений выбрано: '+imgCount));
         sizeInfo.text(Math.round(imgSize / 1024));
+        
     }
 
     // Обновление progress bar'а

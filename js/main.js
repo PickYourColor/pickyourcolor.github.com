@@ -66,7 +66,7 @@
       
     // Create variables (in this scope) to hold the API and image size
       var jcrop_api, boundx, boundy;
-      
+        
       $('#ferret').Jcrop({
         onChange: updatePreview,
         onSelect: updatePreview,
@@ -79,8 +79,10 @@
         {
           var rx = 247 / c.w;
           var ry = 400 / c.h;
-
+          boundx = $('#ferret').width();
+          boundy = $('#ferret').height();
           $('#preview').css({
+
             width: Math.round(rx * boundx) + 'px',
             height: Math.round(ry * boundy) + 'px',
             marginLeft: '-' + Math.round(rx * c.x) + 'px',
