@@ -177,7 +177,8 @@ window.addEventListener('load', function () {
     function log(str) {
         $('<p/>').html(str).prependTo(console);
     }
-
+    //boundx = $('#ferret').width();
+    //boundy = $('#ferret').height();
     // Вывод инфы о выбранных
     function updateInfo() {
         countInfo.text( (imgCount == 0) ? 'Изображений не выбрано' : ('Изображений выбрано: '+imgCount));
@@ -235,6 +236,7 @@ window.addEventListener('load', function () {
                    
 
 					         updateInfo();
+                  $('#preview').attr('src', e.target.result);
                   $('#ferret').Jcrop({
                     onChange: updatePreview,
                     onSelect: updatePreview,
