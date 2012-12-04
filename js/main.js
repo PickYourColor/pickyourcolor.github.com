@@ -27,8 +27,11 @@
             });
 
 
-            $('#all').toggleClass($.cookie("the_cookie"));            
             
+
+
+
+
             $("#per").click(function(e) {
                 e.preventDefault();
                 $(".ramka").toggleClass("w");
@@ -306,6 +309,7 @@ wizHueColors = [
 ];
         var ss = document.getElementById('content');
         var sss = '';
+            $('#all').toggleClass($.cookie("the_cookie"));   
             
              var tempstr = "";
                 for (var i = 0; i < wizHueColors.length; i++) {
