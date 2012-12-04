@@ -34,7 +34,7 @@
             <div class="container">
                 <a class="brand" href="index.html">Pick your color</a>
                 <ul class="nav">
-                    <li class="active"><a href="#">Подбор цвета</a></li>
+                    <li class="active"><a href="index.html">Подбор цвета</a></li>
                     <!-- <li><a href="#">Как это работает?</a></li> --> 
 
                     <li class="dropdown">
@@ -150,40 +150,34 @@
     <script type="text/javascript" src="js/drag.js"></script>
     <script type="text/javascript" src="js/jquery.Jcrop.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-      <script type="text/javascript">
+    
 
-        var ss = document.getElementById('content');
-        var sss = '';
-            $('#all').toggleClass($.cookie("the_cookie"));   
-            
-             var tempstr = "";
-                for (var i = 0; i < wizHueColors.length; i++) {
-                    if ($('#all').hasClass(wizHueColors[i][2])) {
-                        tempstr = tempstr + '<li><a href="#'+wizHueColors[i][2]+'"><span style="color:#'+wizHueColors[i][2]+'">&#9679;</span> '+wizHueColors[i][0]+'</a></li>';
-                    };            
-                };
-                document.getElementById('izbr').innerHTML = tempstr; 
-          
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter18648877 = new Ya.Metrika({id:18648877,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
 
-      for (var i = 0; i < wizHueColors.length; i++) {
-      
-              rgb = wizHueColors[i][2];
-              sss+='<div id="' + i +'" class="span12 b100" style="background-color:#' + rgb + '" name="' + rgb + '"><span class="met"></span><span>'+wizHueColors[i][0] ;
-                if ($('#all').hasClass(wizHueColors[i][2])) {
-                    sss+='</span><a class="iz on" title="Удалить из избранного" name="'+ rgb+'"></a></div>';                               
-                } 
-                else
-                {
-                    sss+='</span><a href="#"  class="iz" title="Добавить в избранное" name="'+ rgb+'"></a>  </div>';            
-                };
-                
-             
-          }         
-      ss.innerHTML = sss;
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
 </script>
-
-
+<noscript><div><img src="//mc.yandex.ru/watch/18648877" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
   </body>
 </html>

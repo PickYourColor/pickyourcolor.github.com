@@ -210,3 +210,10 @@ a.iz:focus{
     padding: 2px 4px;
     background-color: rgba(0,0,0,0.3);
 }
+blockquote p {
+    color: #eeeeee;
+}
+
+h2{
+ color: #eeeeee;   
+}
