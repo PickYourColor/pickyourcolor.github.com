@@ -23,7 +23,7 @@
                 };
               };
               
-              document.getElementById('selname').innerHTML   =color2;
+              document.getElementById('selname').innerHTML = color2;
             });
 
 
@@ -314,7 +314,7 @@ wizHueColors = [
              var tempstr = "";
                 for (var i = 0; i < wizHueColors.length; i++) {
                     if ($('#all').hasClass(wizHueColors[i][2])) {
-                        tempstr = tempstr + '<li><a href="#'+wizHueColors[i][2]+'"><span style="color:#'+wizHueColors[i][2]+'">&#9679;</span> '+wizHueColors[i][0]+'</a></li>';
+                        tempstr = tempstr + '<li><a href="#'+wizHueColors[i][2]+'yac"><span style="color:#'+wizHueColors[i][2]+'">&#9679;</span> '+wizHueColors[i][0]+'</a></li>';
                     };            
                 };
                 document.getElementById('izbr').innerHTML = tempstr; 
@@ -323,7 +323,7 @@ wizHueColors = [
       for (var i = 0; i < wizHueColors.length; i++) {
       
               rgb = wizHueColors[i][2];
-              sss+='<div id="' + i +'" class="span12 b100" style="background-color:#' + rgb + '" name="' + rgb + '"><span class="met"></span><span>'+wizHueColors[i][0] ;
+              sss+='<div id="' + i +'" class="span12 b100" style="background-color:#' + rgb + '" name="' + rgb + '"><a id="' + rgb +'" class="yac">&nbsp;</a><span class="met"></span><span>'+wizHueColors[i][0] ;
                 if ($('#all').hasClass(wizHueColors[i][2])) {
                     sss+='</span><a class="iz on" title="Удалить из избранного" name="'+ rgb+'"></a></div>';                               
                 } 
