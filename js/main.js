@@ -314,7 +314,7 @@ wizHueColors = [
              var tempstr = "";
                 for (var i = 0; i < wizHueColors.length; i++) {
                     if ($('#all').hasClass(wizHueColors[i][2])) {
-                        tempstr = tempstr + '<li><a href="#'+wizHueColors[i][2]+'yac"><span style="color:#'+wizHueColors[i][2]+'">&#9679;</span> '+wizHueColors[i][0]+'</a></li>';
+                        tempstr = tempstr + '<li><a href="#'+wizHueColors[i][2]+'"><span style="color:#'+wizHueColors[i][2]+'">&#9679;</span> '+wizHueColors[i][0]+'</a></li>';
                     };            
                 };
                 document.getElementById('izbr').innerHTML = tempstr; 

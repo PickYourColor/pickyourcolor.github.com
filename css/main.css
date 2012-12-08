@@ -226,3 +226,10 @@ h2{
     top: -100px;
     left: 0px;
 }
+body{
+    color: #eeeeee;
+}
+
+blockquote {
+border-left: 5px solid #222;
+}
